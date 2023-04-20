@@ -1,0 +1,27 @@
+{
+  "name": "toby-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=production&& node dist",
+    "dev:start": "set NODE_ENV=development&& ts-node src",
+    "dev:watch": "set NODE_ENV=development&& ts-node-dev --respawn src",
+    "build": "set NODE_ENV=production && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.0.4",
+    "pogger": "^0.0.9"
+  }
+}
